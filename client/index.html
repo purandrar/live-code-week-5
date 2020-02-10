@@ -11,6 +11,8 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   </head>
 
   <body>
@@ -27,14 +29,14 @@
       <!-- This is Login Form  -->
       <div>
         <h1>Login</h1>
-        <form class="my-4">
-          <div class="form-group">
+        <form class="my-4" id="formLogin" >
+          <div class="form-group" >
             <label for="email">Email</label>
             <input
               type="email"
               class="form-control"
               name="email"
-              id="email"
+              id="emailLogin"
               required
             />
           </div>
@@ -44,22 +46,22 @@
               type="password"
               class="form-control"
               name="password"
-              id="password"
+              id="passwordLogin"
               required
             />
           </div>
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" class="btn btn-primary" >
             Submit
           </button>
-          <button type="submit" class="btn btn-info">
-            Register
-          </button>
         </form>
+            <!-- <button type="submit" class="btn btn-info">
+              Register
+            </button> -->
       </div>
 
       <div>
         <h1>Register</h1>
-        <form class="my-4">
+        <form class="my-4" id="registerForm">
           <div class="form-group">
             <label for="name">Name</label>
             <input
@@ -76,7 +78,7 @@
               type="email"
               class="form-control"
               name="email"
-              id="email"
+              id="emailRegister"
               required
             />
           </div>
@@ -86,7 +88,7 @@
               type="password"
               class="form-control"
               name="password"
-              id="password"
+              id="passwordRegister"
               required
             />
           </div>
@@ -113,7 +115,7 @@
               <div class="card-body">
                 <h5 class="card-title">The Amazing Spiderman - new Avengers</h5>
                 <p class="card-text">Author: J Michael S</p>
-                <button class="btn btn-primary">Edit</button>
+                <button class="btn btn-primary" id="editButton">Edit</button>
               </div>
             </div>
           </div>
@@ -123,17 +125,18 @@
       <div>
         <h1>Update Comic</h1>
         <form class="my-4">
+          <p hidden id="idEdit"></p>
           <div class="form-group">
             <label for="title">Title</label>
-            <input id="title" type="text" class="form-control" name="title" />
+            <input id="titleEdit" type="text" class="form-control" name="title" />
           </div>
           <div class="form-group">
             <label for="author">Author</label>
-            <input type="text" class="form-control" name="author" />
+            <input type="text" class="form-control" name="author" id="authorEdit"/>
           </div>
           <div class="form-group">
             <label for="imageUrl">Comic Image URL</label>
-            <input type="text" class="form-control" name="imageUrl" />
+            <input type="text" class="form-control" name="imageUrl" id="imgURLEdit"/>
           </div>
           <button id="btn-update" type="submit" class="btn btn-primary">
             Submit
@@ -142,4 +145,5 @@
       </di>
     </div>
   </body>
+ 
 </html>

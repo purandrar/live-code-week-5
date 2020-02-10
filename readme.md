@@ -92,7 +92,7 @@ sebagai berikut:
   - headers
     - `{ access_token }`
 - response
-  - `200`: `{ comic: { "title": string, "author": string, "imageURL": string }, message: "success update comic" }`
+  - `200`: `{ comic: { "title": string, "author": string, "imageURL": string }, message: "em" }`
 
 notes:
 
@@ -140,4 +140,4 @@ kamu diminta untuk menggunakan API dari `https://randomuser.me/` untuk mendapatk
 - Fungsi button tersebut untuk mengisi form didalam halaman register dengan memanfaatkan API dari `https://randomuser.me/`
 - Manfaatkanlah data yang didapat dari randomuser sesuai dengan field yang dibutuhkan.
 
-_semua field yang kamu butuhkan untuk register ada didalam randomuser.me_
+_semua field yang kamu butuhkan untuk register ada didalam randomuser.me_2nci
